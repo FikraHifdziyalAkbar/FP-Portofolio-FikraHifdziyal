@@ -163,7 +163,8 @@ body {
 .education,
 .skill,
 .interest,
-.award {
+.award,
+.kontak {
   padding: 7rem 7% 1.4rem;
 }
 
@@ -171,7 +172,8 @@ body {
 .education h2,
 .skill h2,
 .interest h2,
-.award h2 {
+.award h2,
+.kontak h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -181,7 +183,8 @@ body {
 .education h2 span,
 .skill h2 span,
 .interest h2 span,
-.award h2 span {
+.award h2 span,
+.kontak h2 span {
   color: var(--primary);
 }
 
@@ -565,6 +568,52 @@ footer .credit a {
   font-weight: 700;
 }
 
+/* Kontak Section */
+.kontak p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.kontak h2 {
+  margin-bottom: 0.5rem;
+}
+
+.kontak .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.kontak .row form .grup-input {
+  flex: 1 1 45rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 1rem;
+  background-color: var(--backgrond);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.kontak .row form .grup-input input {
+  padding: 2rem;
+  font-size: 1rem;
+  /* background: none; */
+}
+
+.kontak .row form .btnSubmit {
+  margin: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -635,6 +684,10 @@ footer .credit a {
 
   .interest h2 {
     margin-top: 15rem;
+  }
+
+  .kontak .row {
+    flex-wrap: wrap;
   }
 }
 
