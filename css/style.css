@@ -12,11 +12,14 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--backgrond);
   color: #fff;
-  min-height: 3000px;
 }
 
 /* navbar */
@@ -158,13 +161,17 @@ body {
 /* Experience Section */
 .experience,
 .education,
-.skill {
+.skill,
+.interest,
+.award {
   padding: 7rem 7% 1.4rem;
 }
 
 .experience h2,
 .education h2,
-.skill h2 {
+.skill h2,
+.interest h2,
+.award h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -172,7 +179,9 @@ body {
 
 .experience h2 span,
 .education h2 span,
-.skill h2 span {
+.skill h2 span,
+.interest h2 span,
+.award h2 span {
   color: var(--primary);
 }
 
@@ -231,7 +240,7 @@ body {
 .education .row .education-card .edu-card-title {
   margin: 1rem auto 0.5rem;
   color: var(--primary);
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Skill Section */
@@ -484,8 +493,79 @@ body {
   transform: translateX(-50%) rotate(45deg);
 }
 
-/* Media Queries */
+/* Interest Section */
+.interest .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
 
+.interest .row .interest-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.interest .row .interest-card img {
+  border-radius: 50%;
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.interest .row .interest-card .int-card-title {
+  margin: 1rem auto 0.5rem;
+  color: var(--primary);
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+
+/* Award Section */
+.award p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.4rem;
+  text-shadow: 0.5px 0.5px 0.5px rgba(255, 255, 15, 0.6);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 1.5rem;
+  margin-top: 2rem;
+}
+
+footer .sosials {
+  padding: 1rem 0;
+}
+
+footer .sosials a {
+  color: #fff;
+  margin: 0.5rem;
+}
+
+footer .sosials a:hover,
+footer .links a:hover {
+  color: var(--backgrond);
+}
+
+footer .links {
+  margin-bottom: 1.2rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit a {
+  color: var(--backgrond);
+  font-weight: 700;
+}
+
+/* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
   html {
@@ -552,6 +632,10 @@ body {
   .experience .row .exp-content h3 {
     margin-top: 1rem;
   }
+
+  .interest h2 {
+    margin-top: 15rem;
+  }
 }
 
 /* Mobile */
@@ -559,5 +643,9 @@ body {
   html {
     font-size: 55%;
     size: 55%;
+  }
+
+  .interest h2 {
+    margin-top: 16rem;
   }
 }
